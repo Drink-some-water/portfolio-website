@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    background-image: url("../images/blurBackground1.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(28, 29, 37);
+    color: aliceblue;
+    border-radius: 15px;
+    width: 95vw;
+    height: 92vh;
+    overflow: auto;
+    padding: 10px;
+}
+
+a {
+    color: aliceblue;
+}
+
+.navBar {
+    display: flex;
+    margin-left: 100px;
+    margin-top: 15px;
+    gap: 2rem;
+}
+
+.navBar a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: gray;
+}
+
+.link {
+    transition: .3s;
+}
+
+.link:hover {
+    color: aliceblue
+}
