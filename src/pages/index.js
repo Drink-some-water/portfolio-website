@@ -27,14 +27,14 @@ const IndexPage = () => {
                 className={invertIcon}
               />
             </a>
-            <a href="https://www.linkedin.com/in/sean-collins-4a6279252/" target="_blank">
+            <a href="https://www.linkedin.com/in/sean-collins-4a6279252/" target="_blank" rel="noreferrer">
               <StaticImage
                 src="../images/linkedin-brands-solid.svg"
                 alt="LinkedIn"
                 className={invertIcon}
               />
             </a>
-            <a href="https://github.com/Drink-some-water" target="_blank">
+            <a href="https://github.com/Drink-some-water" target="_blank" rel="noreferrer">
               <StaticImage
                 src="../images/github-brands-solid.svg"
                 alt="GitHub"
