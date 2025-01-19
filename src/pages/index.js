@@ -14,7 +14,7 @@ const IndexPage = () => {
             <a href="/SeanCollinsResume.pdf" download >
               <button className={downloadButton}>
                 <StaticImage
-                  src="../static/images/resume.svg"
+                  src="../images/resume.svg"
                   className={invertIcon2}
                 />
                 Resume
@@ -22,21 +22,21 @@ const IndexPage = () => {
             </a>
             <a href='#' onClick={() => window.open("mailto:sean.collins.developer@gmail.com")}>
               <StaticImage
-                src="../static/images/email.svg"
+                src="../images/email.svg"
                 alt="Email"
                 className={invertIcon}
               />
             </a>
             <a href="https://www.linkedin.com/in/sean-collins-4a6279252/" target="_blank" rel="noreferrer">
               <StaticImage
-                src="../static/images/linkedin-brands-solid.svg"
+                src="../images/linkedin-brands-solid.svg"
                 alt="LinkedIn"
                 className={invertIcon}
               />
             </a>
             <a href="https://github.com/Drink-some-water" target="_blank" rel="noreferrer">
               <StaticImage
-                src="../static/images/github-brands-solid.svg"
+                src="../images/github-brands-solid.svg"
                 alt="GitHub"
                 className={invertIcon}
               />
@@ -46,7 +46,7 @@ const IndexPage = () => {
         <div className={portraitBox}>
           <StaticImage
             alt="A picture of Sean Collins looking professional at home"
-            src="../static/images/portrait.jpg"
+            src="../images/portrait.jpg"
             className={imageCircle}
           />
         </div>
