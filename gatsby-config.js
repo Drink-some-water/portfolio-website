@@ -4,7 +4,7 @@
 module.exports = {
   siteMetadata: {
     title: `portfolio website`,
-    siteUrl: `https://www.yourdomain.tld`
+    pathPrefix: "/portfolio-website"
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
