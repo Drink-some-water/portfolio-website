@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Layout from '../components/homepage_layout'
-import { imageCircle, invertIcon, personalLinks, title, header, titleBox, portraitBox, downloadButton, invertIcon2 , aboutMe} from '../styles/styles.module.css'
-import { StaticImage } from 'gatsby-plugin-image'
+import { personalLinks, title, header, titleBox, portraitBox, downloadButton, aboutMe} from '../styles/styles.module.css'
+import { Email, Resume, GitHub, LinkedIn, Portrait } from '../components/icons'
 
 const IndexPage = () => {
   return (
@@ -13,42 +13,23 @@ const IndexPage = () => {
           <nav className={personalLinks}>
             <a href="/SeanCollinsResume.pdf" download >
               <button className={downloadButton}>
-                <StaticImage
-                  src="../../images/resume.svg"
-                  className={invertIcon2}
-                />
-                Resume
+              Resume&nbsp;
+              <Resume/>
               </button>
             </a>
             <a href='#' onClick={() => window.open("mailto:sean.collins.developer@gmail.com")}>
-              <StaticImage
-                src="../../images/email.svg"
-                alt="Email"
-                className={invertIcon}
-              />
+              <Email/>
             </a>
             <a href="https://www.linkedin.com/in/sean-collins-4a6279252/" target="_blank" rel="noreferrer">
-              <StaticImage
-                src="../../images/linkedin-brands-solid.svg"
-                alt="LinkedIn"
-                className={invertIcon}
-              />
+              <LinkedIn/>
             </a>
             <a href="https://github.com/Drink-some-water" target="_blank" rel="noreferrer">
-              <StaticImage
-                src="../../images/github-brands-solid.svg"
-                alt="GitHub"
-                className={invertIcon}
-              />
+              <GitHub/>
             </a>
           </nav>
         </div>
         <div className={portraitBox}>
-          <StaticImage
-            alt="A picture of Sean Collins looking professional at home"
-            src="../../images/portrait.jpg"
-            className={imageCircle}
-          />
+          <Portrait/>
         </div>
       </div>
       <div className={aboutMe}>
