@@ -1,6 +1,6 @@
+import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import {invertIcon, imageCircle, invertIcon2} from '../styles/styles.module.css'
-import React from "react"
 
 export function Email() {
   return <StaticImage src="../images/email.svg" alt="email icon" className={invertIcon}/>

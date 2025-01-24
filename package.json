@@ -7,13 +7,14 @@
   "keywords": [
     "gatsby"
   ],
+  "homepage": "https://drink-some-water.github.io/portfolio-website/",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^5.14.0",
@@ -26,6 +27,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "gh-pages": "^6.3.0"
   }
 }
