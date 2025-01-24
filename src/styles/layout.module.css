@@ -1,6 +1,6 @@
 body {
     display: flex;
-    background-image: url("../images/blurBackground1.jpg");
+    background-image: url("../../images/blurBackground1.jpg");
     background-size: cover;
     justify-content: center;
     align-items: center;
