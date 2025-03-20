@@ -1,18 +1,28 @@
-import Image from 'next/image';
 
-const Project3 = () => {
-  return (
-    <div>
-      <h1>Project number 1</h1>
-      <Image src="/three.jpg" alt="Project Image" width={500} height={300} />
-      <p>This is a description of my project. It does XYZ.</p>
-    </div>
-  );
-};
-export default Project3
-export const ProjectData = {
-  title: 'My Project',
-  description: 'This is a description of my project. It does XYZ.',
-  image: '/three.jpg',
-  slug: 'project3',
-};
+import Image from 'next/image';
+import { BaseProject } from '../../baseProject';
+
+class Project3 extends BaseProject {
+  constructor() {
+    super(
+      'My Project',
+      'This is a description of my project. It does XYZ.',
+      ['/three.jpg'],
+      'project3'
+    );
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>{this.title}</h1>
+        {this.images.map((src, index) => (
+          <Image key={index} src={src} alt={`Image ${index + 1}`} width={500} height={300} />
+        ))}
+        <p>{this.description}</p>
+      </div>
+    );
+  }
+}
+
+export const project3 = new Project3();

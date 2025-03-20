@@ -1,20 +1,28 @@
+// projects/project1.tsx
 import Image from 'next/image';
+import { BaseProject } from '../../baseProject';
 
-const Project1 = () => {
-  return (
-    <div>
-      <h1>Project number 1</h1>
-      <Image src="/one.jpg" alt="Project Image" width={500} height={300} />
-      <p>This is a description of my project. It does XYZ.</p>
-    </div>
-  );
-};
+class Project1 extends BaseProject {
+  constructor() {
+    super(
+      'My Project',
+      'This is a description of my project. It does XYZ.',
+      ['/one.jpg'],
+      'project1'
+    );
+  }
 
-export default Project1
+  render() {
+    return (
+      <div>
+        <h1>{this.title}</h1>
+        {this.images.map((src, index) => (
+          <Image key={index} src={src} alt={`Image ${index + 1}`} width={500} height={300} />
+        ))}
+        <p>{this.description}</p>
+      </div>
+    );
+  }
+}
 
-export const ProjectData = {
-  title: 'My Project',
-  description: 'This is a description of my project. It does XYZ.',
-  image: '/one.jpg',
-  slug: 'project1',
-};
+export const project1 = new Project1();
