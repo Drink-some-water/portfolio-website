@@ -1,0 +1,19 @@
+[
+    {
+      "slug": "project1",
+      "title": "Project One",
+      "description": "This is a short description of Project One.",
+      "fullDescription": "Here is a more detailed description of Project One...",
+      "imageUrls": ["/one.jpg"],
+      "accessibility": "replace me"
+    },
+    {
+      "slug": "project2",
+      "title": "Project Two",
+      "description": "This is a short description of Project Two.",
+      "fullDescription": "Here is a more detailed description of Project Two...",
+      "imageUrls": ["/two.jpg"],
+      "accessibility": "replace me"
+    }
+  ]
+  

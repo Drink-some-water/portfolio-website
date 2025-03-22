@@ -1,13 +1,12 @@
+import Navbar from "./components/navbar";
 
-import Navbar from "./components/navbar"
-
-export default function DashboardLayout({ children }) {
+export default function DashboardLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="en">
+        <html>
             <body>
-                <Navbar/>
+                <Navbar />
                 <main>{children}</main>
             </body>
         </html>
     );
-};
+}

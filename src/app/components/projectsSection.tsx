@@ -1,19 +1,19 @@
 // components/ProjectsSection.tsx
 import Link from 'next/link';
 import Image from 'next/image';
-import { projectList } from '../pages/projects';
+import projectMetadata from '../projectMetadata.json'
 
 const ProjectsSection = () => {
   return (
     <div id="projectList">
-      {projectList.map((project) => (
-        <Link key={project.slug} href={`/projects/${project.slug}`}>
-          <div id="projectCard">
-            <Image src={project.images[0]} alt={project.title} width={300} height={200} />
+      {projectMetadata.map((project) => (
+        <div id='projectCard' key={project.slug}>
+          <Link href={`/pages/projects/${project.slug}`} >
+            <Image src={project.imageUrls[0]} alt={project.accessibility} width={100} height={100}></Image>
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-          </div>
-        </Link>
+          </Link>
+        </div>
       ))}
     </div>
   );
