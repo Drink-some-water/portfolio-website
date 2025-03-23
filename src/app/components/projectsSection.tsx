@@ -9,6 +9,7 @@ const ProjectsSection = () => {
       {projectMetadata.map((project) => (
         <div id='projectCard' key={project.slug}>
           <Link href={`/pages/projects/${project.slug}`} >
+            <div id='tagline'>{project.tags}</div>
             <Image src={project.imageUrls[0]} alt={project.accessibility} width={100} height={100}></Image>
             <h3>{project.title}</h3>
             <p>{project.description}</p>

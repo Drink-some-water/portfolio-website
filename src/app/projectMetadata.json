@@ -5,6 +5,7 @@
       "description": "This is a short description of Project One.",
       "fullDescription": "Here is a more detailed description of Project One...",
       "imageUrls": ["/one.jpg"],
+      "tags":["C++", "Python"],
       "accessibility": "replace me"
     },
     {
@@ -13,6 +14,7 @@
       "description": "This is a short description of Project Two.",
       "fullDescription": "Here is a more detailed description of Project Two...",
       "imageUrls": ["/two.jpg"],
+      "tags":[],
       "accessibility": "replace me"
     }
   ]
