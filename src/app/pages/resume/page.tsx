@@ -4,7 +4,7 @@ import Experience from '../../components/experience'
 const resume = () => {
     return (
         <div>
-            <Link href=''><button>Download a copy</button> </Link>
+            <Link href='/Sean Collins Software Engineer and AI Trainer 2025.pdf'><button>Download a copy</button> </Link>
             <h2>Summary</h2>
             <p>I'm a software dev</p>
             <h2>Work Experience</h2>
@@ -14,7 +14,7 @@ const resume = () => {
             <h2>Skills</h2>
             <div id='skillsLinkToProjects'>
             <h3>languages</h3>
-            <p><Link href=''>C++</Link><Link href=''>Python</Link></p>
+            <p><Link href='/projects/project1'>C++</Link><Link href=''>Python</Link></p>
             <h3>technology</h3>
             <p>list of technologies</p>
             <h3>soft skills</h3>

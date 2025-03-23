@@ -1,4 +1,5 @@
 import projectMetadata from '../../../projectMetadata.json'
+import Image from 'next/image'
 
 export default async function Page({
   params,
@@ -22,7 +23,7 @@ export default async function Page({
       <div>
         <h3>Images:</h3>
         {project.imageUrls.map((imageUrl, index) => (
-          <img key={index} src={imageUrl} alt={project.title} />
+          <Image key={index} src={imageUrl} alt={project.title} />
         ))}
       </div>
       <p>Accessibility: {project.accessibility}</p>
