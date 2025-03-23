@@ -6,7 +6,7 @@ const resume = () => {
         <div>
             <Link href='/Sean Collins Software Engineer and AI Trainer 2025.pdf'><button>Download a copy</button> </Link>
             <h2>Summary</h2>
-            <p>I'm a software dev</p>
+            <p>I&apos;m a software dev</p>
             <h2>Work Experience</h2>
             <Experience></Experience>
             <h2>Education</h2>
